@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey form</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body id="body">
+    <div id="form">
+      <div id="header">
+        <h1 id="title">Customer Satisfaction Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </div>
+      <form action="" id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+
+        <label for="email" id="email-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <label for="number" id="number-label">Age</label>
+        <input
+          type="number"
+          id="number"
+          min="0"
+          max="150"
+          placeholder="Enter your age"
+        />
+
+        <label for="dropdown" id="dropdown-label"
+          >How long have you been a customer of our customer?</label
+        >
+        <select name="" id="dropdown">
+          <option value="" disabled selected>Please Select</option>
+          <option value="1">This is my first purchase</option>
+          <option value="2">less than six months</option>
+          <option value="3">Six months to a year</option>
+          <option value="3">1-2 years</option>
+          <option value="3">3 or more years</option>
+          <option value="3">I haven't made a purchase yet</option>
+        </select>
+
+        <label for="feedback" id="radio-label"
+          >Overall, how satisfied or dissatisfied are you with our
+          company?</label
+        >
+        <input
+          type="radio"
+          name="feedBack"
+          id="very-satisfied"
+          value="very satisfied"
+        />
+        <label for="very-satisfied">Very Satisfied</label>
+
+        <input
+          type="radio"
+          name="feedBack"
+          id="somewhat-satisfied"
+          value="somewhat satisfied"
+        />
+        <label for="somewhat-satisfied">Somewhat Satisfied</label>
+
+        <input
+          type="radio"
+          name="feedBack"
+          id="nsd"
+          value="neither satisfied or dissatisfied"
+        />
+        <label for="nsd">neither satisfied or dissatisfied</label>
+
+        <input
+          type="radio"
+          name="feedBack"
+          id="somewhat-dissatisfied"
+          value="somewhat dissatisfied"
+        />
+        <label for="somewhat-dissatisfied">Somewhat Dissatisfied</label>
+
+        <input
+          type="radio"
+          name="feedBack"
+          id="very-dissatisfied"
+          value="very dissatisfied"
+        />
+        <label for="very-dissatisfied">Very Dissatisfied</label>
+
+        <label for="" id="checkbox-label"
+          >Which of the following words would you use to describe our products?
+          Select all that apply.</label
+        >
+        <input type="checkbox" value="reliable" id="check-1" />
+        <label for="check-1">Reliable</label>
+
+        <input type="checkbox" value="high quality" id="check-2" />
+        <label for="check-2">High quality</label>
+
+        <input type="checkbox" value="useful" id="check-3" />
+        <label for="check-3">Useful</label>
+
+        <input type="checkbox" value="unique" id="check-4" />
+        <label for="check-4">Unique</label>
+
+        <input type="checkbox" value="Good value for money" id="check-5" />
+        <label for="check-5">Good value for money</label>
+
+        <input type="checkbox" value="overpriced" id="check-6" />
+        <label for="check-6">Overpriced</label>
+
+        <input type="checkbox" value="impractical" id="check-7" />
+        <label for="check-7">Impractical</label>
+
+        <input type="checkbox" value="ineffective" id="check-8" />
+        <label for="check-8">Ineffective</label>
+
+        <input type="checkbox" value="poor quality" id="check-9" />
+        <label for="check-9">Poor quality</label>
+
+        <input type="checkbox" value="unreliable" id="check-10" />
+        <label for="check-10">Unreliable</label>
+
+        <label for="comments" id="commnet-label"
+          >Do you have any other comments, questions, or concerns?</label
+        >
+        <textarea
+          name="addition_comment"
+          id="comments"
+          cols="30"
+          rows="10"
+        ></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
